@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import TodoList from './TodoList.js';
 
 function App() {
   return (
@@ -14,8 +15,7 @@ function App() {
         >
           Amir Learn React
         </a>
-        <div>Learn Javascript</div>
-        <div>Learn React</div>
+        <TodoList />
         <div>
           <input type="text" />
           <button>Add Todo</button>
