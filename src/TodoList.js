@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function TodoList() {
+export default function TodoList({ todoList }) {
     return (
         <>
-            <div>Learn Javascript</div>
-            <div>Learn React</div>
+            <div>{todoList[0][0]}</div>
+            <div>{todoList[0][1]}</div>
         </>
     )
 }

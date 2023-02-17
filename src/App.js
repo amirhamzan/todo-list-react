@@ -1,8 +1,10 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TodoList from './TodoList.js';
 
 function App() {
+  const todos = useState(['Learn Javascript', 'Learn React']);
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +17,7 @@ function App() {
         >
           Amir Learn React
         </a>
-        <TodoList />
+        <TodoList todoList={todos} />
         <div>
           <input type="text" />
           <button>Add Todo</button>
