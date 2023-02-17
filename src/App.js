@@ -4,7 +4,13 @@ import './App.css';
 import TodoList from './TodoList.js';
 
 function App() {
-  const [todos] = useState(['Learn Javascript', 'Learn React']);
+  const [todos] = useState([
+    { id: 1, name: 'Learn Javascript', complete: false },
+    { id: 2, name: 'Learn React', complete: false },
+    { id: 3, name: 'Build SPA', complete: false },
+    { id: 4, name: 'Build server-rendered website using Next.js', complete: false },
+    { id: 5, name: 'Build static content-oriented website using Gatsby', complete: false },
+  ]);
   return (
     <div className="App">
       <header className="App-header">
