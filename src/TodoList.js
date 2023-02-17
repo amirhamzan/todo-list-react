@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Todo from './Todo.js';
 
 export default function TodoList({ todoList }) {
     return (
-        <>
-            <div>{todoList[0][0]}</div>
-            <div>{todoList[0][1]}</div>
-        </>
+        todoList.map(todo => {
+            return <Todo key={todo} todo={todo} />
+        })
     )
 }

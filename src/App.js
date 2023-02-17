@@ -4,7 +4,7 @@ import './App.css';
 import TodoList from './TodoList.js';
 
 function App() {
-  const todos = useState(['Learn Javascript', 'Learn React']);
+  const [todos] = useState(['Learn Javascript', 'Learn React']);
   return (
     <div className="App">
       <header className="App-header">
